@@ -1,0 +1,6 @@
+*.pickle
+*__pycache__*
+*.log
+.vscode
+data/*.json*
+data/*.png

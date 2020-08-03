@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="wrap-login100">
+    <div class="login100-pic js-tilt" data-tilt>
+        <img src="/static/images/bahi_khata.png" alt="IMG">
+    </div>
+
+    <form class="login100-form validate-form">
+        <span class="login100-form-title">
+            Welcome to <br>Bahi Khata App
+        </span>
+
+        <div class="container-login100-form-btn">
+            <a href="{{ url_for('start_auth') }}" class="btn-google m-b-20">
+                <img src="/static/images/icons/icon-google.png" alt="GOOGLE">
+                Sign in with Google
+            </a>
+        </div>
+        <div class="text-center p-t-136 txt2">
+            Copyright 2020 © Bahi Khata App
+        </div>
+    </form>
+</div>
+{% endblock %}

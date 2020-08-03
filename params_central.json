@@ -1,0 +1,32 @@
+{
+    "amazon": {
+        "query": "from:(Amazon.in) subject:(amazon.in your order) -{update been} ",
+        "after": "2019-05",
+        "fname": "data/0617_one_year_dump_amazon.pickle"
+    },
+    "curefit": {
+        "query": "from:noreply@cure.fit Confirmation for ",
+        "after": "2019-05",
+        "fname": "data/0617_one_year_dump_curefit.pickle"
+    },
+    "flipkart": {
+        "query": "from:(Flipkart.com) Your order has been successfully placed ",
+        "after": "2019-05",
+        "fname": "data/0617_one_year_dump_flipkart.pickle"
+    },
+    "myntra": {
+        "query": "from:(Myntra Updates) Your Myntra Order Confirmation -{item} ",
+        "after": "2019-05",
+        "fname": "data/0617_one_year_dump_myntra.pickle"
+    },
+    "ola": {
+        "query": "ola your ride to",
+        "after": "2019-05",
+        "fname": "data/0617_one_year_dump_ola.pickle"
+    },
+    "uber": {
+        "query": "uber receipts trip with uber",
+        "after": "2019-05",
+        "fname": "data/0617_one_year_dump_uber.pickle"
+    }
+}

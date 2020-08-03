@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="wrap-login100">
+    <div class="login100-pic js-tilt" data-tilt>
+        <img src="/static/images/bahi_khata.png" alt="IMG">
+    </div>
+    <form method="POST" action="/signup" class="login100-form validate-form">
+        <span class="login100-form-title p-b-49">
+            Sign Up
+        </span>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <div class="alert alert-danger" role="alert">
+            {{ messages[0] }}. Go to <a class="alert-link" href="{{ url_for('auth.login') }}">login page</a>.
+        </div>
+        {% endif %}
+        {% endwith %}
+        <div class="wrap-input100 validate-input m-b-23" data-validate="Username is reauired">
+            <span class="label-input100">Email</span>
+            <input class="input100" type="email" name="email" placeholder="Email" autofocus="">
+        </div>
+        <div class="wrap-input100 validate-input" data-validate="Password is required">
+            <span class="label-input100">Name</span>
+            <input class="input100" type="text" name="name" placeholder="Name" autofocus="">
+        </div>
+        <div class="wrap-input100 validate-input" data-validate="Password is required">
+            <span class="label-input100">Password</span>
+            <input class="input100" type="password" name="password" placeholder="Password">
+        </div>
+        <div class="container-login100-form-btn">
+            <div class="wrap-login100-form-btn">
+                <div class="login100-form-bgbtn"></div>
+                <button class="login100-form-btn">
+                    Login
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,18 @@
+At 6:08 PM, March 14
+gmail_flask.py queries mail for all the cure fit related transaction mails
+`dump_cure_fit.pickle` is the lists of htmls for the messages
+
+
+TO RUN:
+export FLASK_APP=gmail_flask.py
+python3 -m flask run
+
+
+First make changes to gmail_flask.py to include the desired query.
+Dump the output in a .pickel format in data/
+Write an analysis file in src/
+
+
+Selenium needed by altair to export to png
+Add chromedriver, google-chrome build-packages on heroku
+to make selenium work, also add config vars in heroku settings
