@@ -7,7 +7,7 @@
     <h3 align="center">बही खाता</h3>
 
   <div align="center">
-    A flask app to help you become prudent in your spendings
+    A Python app to help you become prudent in your spendings
     <br />
     <br />
     <a href="https://bahi-khata-app.herokuapp.com">View Demo</a>
