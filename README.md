@@ -124,7 +124,7 @@ export FLASK_APP="gmail_flask.py"
 
 ![usage.gif](static/images/usage.gif)
 
-5. If any data is found, you'll receive an email report similar as below
+5. If any relevant data is found, you'll receive an email report similar as below
 
 ![sample_report.png](static/images/sample_report.png)
 
